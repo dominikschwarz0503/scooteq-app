@@ -1,0 +1,10 @@
+.Map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Map {
+  height: 288px;
+  width: 320px;
+}

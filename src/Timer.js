@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Timer.css";
 
-let renting = false;
+// Flag to toggle the timer on and off
+let renting = true;
 function Timer() {
   const [seconds, setSeconds] = useState(0);
   const [minutes, setMinutes] = useState(0);
@@ -26,7 +27,7 @@ function Timer() {
         setMinutes(0);
         setSeconds(0);
       }
-    }, 100);
+    }, 1000);
 
     if (!renting) {
       clearInterval(timer);
@@ -44,7 +45,13 @@ function Timer() {
       </h1>
       <p>Cost per Minute: 15ct</p>
       <div className="Total-component">
-        <h1>Total: {totalPrice.toFixed(2)}€</h1>
+        <h1>
+          Total:{" "}
+          {totalPrice.toFixed(2) <= 9
+            ? "0" + totalPrice.toFixed(2)
+            : totalPrice.toFixed(2)}
+          €
+        </h1>
       </div>
     </div>
   );
