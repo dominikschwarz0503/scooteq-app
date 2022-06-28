@@ -23,21 +23,6 @@
   font-size: 1.5rem;
 }
 
-.Total-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.MainScreenMapView-container h2 {
-  background-color: #d5573b;
-  color: #242423;
-  border-radius: 1rem;
-  padding: 1rem 2rem;
-  max-width: 250px;
-  box-shadow: 0 6px 4px 0 rgba(0, 0, 0, 0.4);
-}
-
 .credit-text {
   position: absolute;
   bottom: 0;
