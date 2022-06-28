@@ -1,0 +1,64 @@
+.MainScreenMapView-container {
+  min-height: 100vh;
+  background-color: #4ba5bd;
+  z-index: 0;
+}
+
+.MainScreenMapView-container::before {
+  content: "";
+  background-color: #99dcee;
+  position: absolute;
+  display: block;
+  min-width: 100vw;
+  min-height: 70px;
+  z-index: -1;
+}
+
+.MainScreenMapView-container img {
+  z-index: 999;
+  margin-top: 25px;
+}
+
+.MainScreenMapView-container h1 {
+  font-size: 1.5rem;
+}
+
+.Total-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MainScreenMapView-container h2 {
+  background-color: #d5573b;
+  color: #242423;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  max-width: 250px;
+  box-shadow: 0 6px 4px 0 rgba(0, 0, 0, 0.4);
+}
+
+.credit-text {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 2rem;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.credit-text img {
+  margin: 0;
+  animation: React-logo-spin infinite 10s linear;
+}
+
+@keyframes React-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
