@@ -1,0 +1,46 @@
+{
+  "scooterLocations": [
+    {
+      "name": "Scooter1",
+      "location": {
+        "latitude": 54.133708600794535,
+        "longitude": 12.059956823691344
+      }
+    },
+    {
+      "name": "Scooter2",
+      "location": {
+        "latitude": 54.139169451041006,
+        "longitude": 12.053405492377959
+      }
+    },
+    {
+      "name": "Scooter3",
+      "location": {
+        "latitude": 54.13669543783022,
+        "longitude": 12.04775783969508
+      }
+    },
+    {
+      "name": "Scooter4",
+      "location": {
+        "latitude": 54.141992988070534,
+        "longitude": 12.043752203097196
+      }
+    },
+    {
+      "name": "Scooter5",
+      "location": {
+        "latitude": 54.13534427641779,
+        "longitude": 12.053948368825415
+      }
+    },
+    {
+      "name": "Scooter6",
+      "location": {
+        "latitude": 54.13228622183717,
+        "longitude": 12.056740176108145
+      }
+    }
+  ]
+}
