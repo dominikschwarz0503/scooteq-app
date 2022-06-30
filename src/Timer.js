@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Timer.css";
 
-// Flag to toggle the timer on and off
-let renting = true;
-function Timer() {
+function Timer(props) {
   const [seconds, setSeconds] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [hours, setHours] = useState(0);
@@ -29,7 +27,7 @@ function Timer() {
       }
     }, 1000);
 
-    if (!renting) {
+    if (!props.timerRunning) {
       clearInterval(timer);
     }
 

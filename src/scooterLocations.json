@@ -3,44 +3,97 @@
     {
       "name": "Scooter1",
       "location": {
-        "latitude": 54.133708600794535,
-        "longitude": 12.059956823691344
-      }
+        "latitude": 54.12864075,
+        "longitude": 12.06182079
+      },
+      "isFree": true
     },
     {
       "name": "Scooter2",
       "location": {
-        "latitude": 54.139169451041006,
-        "longitude": 12.053405492377959
-      }
+        "latitude": 54.13910346,
+        "longitude": 12.04886002
+      },
+      "isFree": true
     },
     {
       "name": "Scooter3",
       "location": {
-        "latitude": 54.13669543783022,
-        "longitude": 12.04775783969508
-      }
+        "latitude": 54.13956381,
+        "longitude": 12.05595913
+      },
+      "isFree": true
     },
     {
       "name": "Scooter4",
       "location": {
-        "latitude": 54.141992988070534,
-        "longitude": 12.043752203097196
-      }
+        "latitude": 54.12503888,
+        "longitude": 12.06039798
+      },
+      "isFree": true
     },
     {
       "name": "Scooter5",
       "location": {
-        "latitude": 54.13534427641779,
-        "longitude": 12.053948368825415
-      }
+        "latitude": 54.12956597,
+        "longitude": 12.05666845
+      },
+      "isFree": false
     },
     {
       "name": "Scooter6",
       "location": {
-        "latitude": 54.13228622183717,
-        "longitude": 12.056740176108145
+        "latitude": 54.13070823,
+        "longitude": 12.06191986
       }
+    },
+    {
+      "name": "Scooter7",
+      "location": {
+        "latitude": 54.13914372,
+        "longitude": 12.054182
+      },
+      "isFree": false
+    },
+    {
+      "name": "Scooter8",
+      "location": {
+        "latitude": 54.13016305,
+        "longitude": 12.05913886
+      },
+      "isFree": false
+    },
+    {
+      "name": "Scooter9",
+      "location": {
+        "latitude": 54.12984548,
+        "longitude": 12.07107642
+      },
+      "isFree": false
+    },
+    {
+      "name": "Scooter10",
+      "location": {
+        "latitude": 54.13595297,
+        "longitude": 12.05400714
+      },
+      "isFree": false
+    },
+    {
+      "name": "Scooter11",
+      "location": {
+        "latitude": 54.12740168,
+        "longitude": 12.06752848
+      },
+      "isFree": false
+    },
+    {
+      "name": "Scooter12",
+      "location": {
+        "latitude": 54.1284247,
+        "longitude": 12.05238587
+      },
+      "isFree": true
     }
   ]
 }

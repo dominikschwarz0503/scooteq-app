@@ -25,9 +25,8 @@
 }
 
 .credit-text {
-  position: absolute;
   bottom: 0;
-  margin-bottom: 2rem;
+  margin-top: 7.5rem;
   width: 100vw;
   display: flex;
   justify-content: center;
