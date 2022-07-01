@@ -1,5 +1,5 @@
 import { Marker, Popup } from "react-leaflet";
-import L from "leaflet";
+import L, { map } from "leaflet";
 import greenIcon from "./scooter-icon-green.svg";
 import redIcon from "./scooter-icon-red.svg";
 import { Component } from "react";
@@ -32,7 +32,7 @@ class ScooterIcon extends Component {
 
   rentScooter(e) {
     e.stopPropagation();
-    this.setState({ isRenting: true });
+    // this.setState({ isRenting: true });
     this.props.setRenting();
   }
 

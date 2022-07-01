@@ -1,5 +1,5 @@
 .MainScreenMapView-container {
-  min-height: 100vh;
+  max-height: 100vh;
   width: 100vw;
   background-color: #4ba5bd;
   z-index: 0;
@@ -36,6 +36,7 @@
 
 .credit-text img {
   margin: 0;
+  z-index: -1;
   animation: React-logo-spin infinite 10s linear;
 }
 

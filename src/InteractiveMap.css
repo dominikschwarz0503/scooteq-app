@@ -5,6 +5,8 @@
 }
 
 .Map {
+  border-radius: 1rem;
   height: 288px;
   width: 320px;
+  z-index: 0;
 }
