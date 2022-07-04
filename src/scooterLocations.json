@@ -94,6 +94,14 @@
         "longitude": 12.05238587
       },
       "isFree": true
+    },
+    {
+      "name": "Scooter13",
+      "location": {
+        "latitude": 53.4999704123155,
+        "longitude": 10.002605221419202
+      },
+      "isFree": true
     }
   ]
 }

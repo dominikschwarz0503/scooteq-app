@@ -4,6 +4,8 @@ import greenIcon from "./scooter-icon-green.svg";
 import redIcon from "./scooter-icon-red.svg";
 import { Component } from "react";
 
+let popup = L.popup();
+
 //Green icon for available scooter
 const greenScooterIcon = new L.Icon({
   iconUrl: greenIcon,
@@ -32,7 +34,9 @@ class ScooterIcon extends Component {
 
   rentScooter(e) {
     e.stopPropagation();
-    // this.setState({ isRenting: true });
+    if (popup.isOpen) {
+      popup.closePopup();
+    }
     this.props.setRenting();
   }
 

@@ -5,6 +5,7 @@ import reactLogo from "./logo.svg";
 import Timer from "./Timer";
 import InteractiveMap from "./InteractiveMap";
 import ScooterDetailSlide from "./ScooterDetailSlide";
+import profileIcon from "./profile-icon.svg";
 class MainScreenMapView extends Component {
   constructor(props) {
     super(props);
@@ -14,27 +15,36 @@ class MainScreenMapView extends Component {
   }
 
   startTimer() {
+    console.log("Timer started!");
+    setTimeout(() => {
+      this.setState({ timerRunning: true });
+    }, 500);
+  }
+
+  openSlide() {
     document.querySelector(".wrapper").classList.remove("close");
     document.querySelector(".wrapper").classList.add("open");
-    setTimeout(() => {
-      document.querySelector(".wrapper").classList.remove("open");
-      document.querySelector(".wrapper").classList.add("close");
-      this.setState({ timerRunning: true });
-    }, 3000);
   }
 
   render() {
     return (
       <div className="MainScreenMapView-container">
+        <header>
+          <nav className="navbar">
+            <img src={profileIcon} alt="profile-icon" />
+          </nav>
+        </header>
         <img src={scooteqLogo} alt="scooteq logo"></img>
-        <InteractiveMap startTimer={this.startTimer.bind(this)} />
+        <InteractiveMap openSlide={this.openSlide.bind(this)} />
         <Timer timerRunning={this.state.timerRunning} />
-        <p className="credit-text">
-          Built with{" "}
-          <img src={reactLogo} width={48} height={48} alt="react logo" /> by
-          Dominik and Justin
-        </p>
-        <ScooterDetailSlide />
+        <div className="credit-text">
+          <p>
+            Built with{" "}
+            <img src={reactLogo} width={48} height={48} alt="react logo" /> by
+            Dominik and Justin
+          </p>
+        </div>
+        <ScooterDetailSlide startTimer={this.startTimer.bind(this)} />
       </div>
     );
   }

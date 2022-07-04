@@ -46,7 +46,7 @@ function InteractiveMap(props) {
 
   const setRentStatus = () => {
     setRentingStatus(true);
-    props.startTimer();
+    props.openSlide();
   };
 
   return (

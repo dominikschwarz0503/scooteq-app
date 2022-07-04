@@ -7,9 +7,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <MainScreenMapView />
         {/* <Login /> */}
         {/* <SignUp /> */}
-        <MainScreenMapView />
       </header>
     </div>
   );

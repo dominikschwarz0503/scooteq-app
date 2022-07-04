@@ -1,18 +1,21 @@
 .MainScreenMapView-container {
-  min-height: 100vh;
+  height: 100vh;
   width: 100vw;
   background-color: #4ba5bd;
   z-index: 0;
 }
 
-.MainScreenMapView-container::before {
-  content: "";
+.navbar {
+  height: 60px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
   background-color: #99dcee;
-  position: absolute;
-  display: block;
-  min-width: 100vw;
-  min-height: 70px;
-  z-index: -1;
+}
+
+.MainScreenMapView-container .navbar img {
+  margin: 0;
+  margin-right: 2.5rem;
 }
 
 .MainScreenMapView-container img {
@@ -26,12 +29,17 @@
 
 .credit-text {
   bottom: 0;
-  margin-top: 7.5rem;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bold;
+}
+
+.credit-text p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .credit-text img {
