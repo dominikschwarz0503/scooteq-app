@@ -6,6 +6,7 @@ import Timer from "./Timer";
 import InteractiveMap from "./InteractiveMap";
 import ScooterDetailSlide from "./ScooterDetailSlide";
 import profileIcon from "./profile-icon.svg";
+import ScooterDetailSlidePrototype from "./ScooterDetailSlidePrototype";
 class MainScreenMapView extends Component {
   constructor(props) {
     super(props);
@@ -21,10 +22,7 @@ class MainScreenMapView extends Component {
     }, 500);
   }
 
-  openSlide() {
-    document.querySelector(".wrapper").classList.remove("close");
-    document.querySelector(".wrapper").classList.add("open");
-  }
+  openSlide() {}
 
   render() {
     return (
@@ -44,7 +42,8 @@ class MainScreenMapView extends Component {
             Dominik and Justin
           </p>
         </div>
-        <ScooterDetailSlide startTimer={this.startTimer.bind(this)} />
+        {/* <ScooterDetailSlide startTimer={this.startTimer.bind(this)} /> */}
+        <ScooterDetailSlidePrototype open={true} />
       </div>
     );
   }
