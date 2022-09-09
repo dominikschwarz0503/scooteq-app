@@ -1,95 +1,54 @@
-.wrapper {
-  height: 0vh;
-  visibility: hidden;
-  overflow: hidden;
-  transition: transform 1s ease;
+:root {
+    --rsbs-backdrop-bg: rgba(0, 0, 0, 0.6);
+    --rsbs-bg: rgb(51, 53, 51);
+    --rsbs-handle-bg: hsla(0, 0%, 100%, 0.5);
+    --rsbs-max-w: auto;
+    --rsbs-ml: env(safe-area-inset-left);
+    --rsbs-mr: env(safe-area-inset-right);
+    --rsbs-overlay-rounded: 16px;
 }
 
 .ScooterDetailSlide-container {
-  height: 100vh;
-  background-color: #333533;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .ScooterDetailSlide-container h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 2rem;
-  color: #d5573b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    color: #d5573b;
 }
 
 .ScooterDetailSlide-container img {
-  margin-bottom: 1rem;
-  height: 200px;
-  overflow: hidden;
-}
-
-.ScooterDetailSlide-container h1::before {
-  content: "";
-  background-color: #fff;
-  width: 25%;
-  height: 5px;
-  display: flex;
-  justify-content: center;
-  border-radius: 0.5rem;
+    background-color: rgba(75, 164, 189, 0.774);
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    height: 200px;
+    overflow: hidden;
 }
 
 .ScooterDetailSlide-list {
-  list-style: none;
-  text-align: left;
-  font-weight: bold;
-  margin-bottom: 2rem;
+    color: white;
+    list-style: none;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 2rem;
 }
 
 .ScooterDetailSlide-container button {
-  background-color: #4ba5bd;
-  color: #fff;
-  height: 35px;
-  min-width: 257px;
-  border-radius: 1rem;
-  outline: none;
-  border: none;
-  font-weight: bold;
-  font-size: 1.5rem;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.wrapper.open {
-  animation: slideup 1s forwards;
-}
-
-.wrapper.close {
-  animation: slidedown 1s forwards;
-}
-
-@keyframes slideup {
-  0% {
-    transform: translateY(0);
-    pointer-events: none;
-  }
-
-  100% {
-    transform: translateY(-75%);
-    min-height: 75vh;
-    visibility: visible;
-  }
-}
-
-@keyframes slidedown {
-  0% {
-    transform: translateY(-75%);
-    min-height: 75vh;
-    visibility: visible;
-  }
-
-  100% {
-    transform: translateY(0);
-    pointer-events: none;
-  }
+    background-color: #4ba5bd;
+    color: #fff;
+    height: 40px;
+    min-width: 220px;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
