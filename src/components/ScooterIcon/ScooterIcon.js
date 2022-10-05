@@ -1,7 +1,7 @@
 import { Marker, Popup } from "react-leaflet";
-import L, { map } from "leaflet";
-import greenIcon from "./scooter-icon-green.svg";
-import redIcon from "./scooter-icon-red.svg";
+import L from "leaflet";
+import greenIcon from "../../img/scooter-icon-green.svg";
+import redIcon from "../../img/scooter-icon-red.svg";
 import { Component } from "react";
 
 let popup = L.popup();
@@ -58,6 +58,7 @@ class ScooterIcon extends Component {
                             ? "free!"
                             : " occupied!"}
                         {this.props.isFree && !this.state.isRenting && (
+                            // eslint-disable-next-line jsx-a11y/anchor-is-valid
                             <a
                                 onClick={this.rentScooter}
                                 style={{

@@ -1,0 +1,49 @@
+.MainScreenMapView-container {
+    height: 100%;
+    width: 100%;
+    background-color: #4ba5bd;
+    z-index: 0;
+}
+
+.MainScreenMapView-container .navbar img {
+    margin: 0;
+    margin-right: 2.5rem;
+}
+
+.MainScreenMapView-container img {
+    z-index: 999;
+    margin-top: 25px;
+}
+
+.MainScreenMapView-container h1 {
+    font-size: 1.5rem;
+}
+
+.credit-text {
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.credit-text p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.credit-text img {
+    margin: 0;
+    z-index: -1;
+    animation: React-logo-spin infinite 10s linear;
+}
+
+@keyframes React-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

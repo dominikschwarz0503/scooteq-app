@@ -1,34 +1,38 @@
-import React from "react";
-import "./MainScreenMapView.css";
-import scooteqLogo from "./scooteq-logo.png";
-import reactLogo from "./logo.svg";
-import Timer from "./Timer";
-import InteractiveMap from "./InteractiveMap";
-import profileIcon from "./profile-icon.svg";
-import ScooterDetailSlidePrototype from "./ScooterDetailSlidePrototype";
-import { useRef } from "react";
-import { useState } from "react";
-export default function MainScreenMapView(props) {
+import React from 'react'
+import { useRef, useState } from 'react';
+import InteractiveMap from '../InteractiveMap/InteractiveMap';
+import ScooterDetailSlide from '../ScooterDetailSlide/ScooterDetailSlide';
+import Timer from '../Timer/Timer';
+import scooteqLogo from "../../img/scooteq-logo.png";
+import reactLogo from "../../img/logo.svg";
+import { useEffect } from 'react';
+import "./Renting.css";
+
+export default function Renting() {
+
     const sheetComponent = useRef();
 
     const [isTimerRunning, setTimerRunning] = useState(false);
 
+    useEffect(() => {
+        if (localStorage.getItem("isTimerRunning") === true) {
+            setTimerRunning(true);
+        }
+    }, [])
+
     const startTimer = () => {
         setTimeout(() => {
             setTimerRunning(true);
+            localStorage.setItem("isTimerRunning", isTimerRunning);
         }, 500);
     };
 
     const openSlide = () => {
         sheetComponent.current.openSheet();
     };
+
     return (
         <div className="MainScreenMapView-container">
-            <header>
-                <nav className="navbar">
-                    <img src={profileIcon} alt="profile-icon" />
-                </nav>
-            </header>
             <img src={scooteqLogo} alt="scooteq logo"></img>
             <InteractiveMap openSlide={openSlide} />
             <Timer timerRunning={isTimerRunning} />
@@ -44,11 +48,10 @@ export default function MainScreenMapView(props) {
                     by Dominik and Justin
                 </p>
             </div>
-            {/* <ScooterDetailSlide startTimer={this.startTimer.bind(this)} /> */}
-            <ScooterDetailSlidePrototype
+            <ScooterDetailSlide
                 ref={sheetComponent}
                 startTimer={startTimer}
             />
         </div>
-    );
+    )
 }

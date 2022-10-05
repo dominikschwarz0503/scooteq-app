@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { MapContainer, TileLayer } from "react-leaflet";
 import "./InteractiveMap.css";
-import ChangeMapView from "./ChangeMapView";
-import ScooterIcon from "./ScooterIcon";
-import scooterData from "./scooterLocations.json";
+import ChangeMapView from "../ChangeMapView/ChangeMapView";
+import ScooterIcon from "../ScooterIcon/ScooterIcon";
+import scooterData from "../../scooterLocations.json";
 
 function InteractiveMap(props) {
+
+    // TODO: Change scooter icon based on the renting status 
+    // eslint-disable-next-line no-unused-vars
     const [renting, setRentingStatus] = useState(false);
 
     const [userLocation, setUserLocation] = useState({

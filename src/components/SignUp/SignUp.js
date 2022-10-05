@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useRef } from "react";
-import scooteqLogo from "./scooteq-logo.png";
+import scooteqLogo from "../../img/scooteq-logo.png";
 import "./SignUp.css";
 
 function SignUp() {
@@ -18,7 +18,7 @@ function SignUp() {
 
     localStorage.setItem("email", user.email);
     emailField.current.value = localStorage.getItem("email");
-  }, [])
+  })
 
   const saveUserCredentials = () => {
 

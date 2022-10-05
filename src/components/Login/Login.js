@@ -1,7 +1,6 @@
 import React from "react";
-import scooteqLogo from "./scooteq-logo.png";
+import scooteqLogo from "../../img/scooteq-logo.png";
 import "./Login.css";
-import MainScreenMapView from "./MainScreenMapView";
 import { useEffect, useRef } from "react";
 
 export default function Login(props) {
@@ -15,6 +14,7 @@ export default function Login(props) {
     localStorage.setItem("email", user.email);
     emailField.current.value = localStorage.getItem("email");
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const checkCredentials = () => {

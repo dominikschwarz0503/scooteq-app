@@ -1,7 +1,6 @@
 import "./App.css";
-import Login from "./Login.js";
-import SignUp from "./SignUp.js";
-import MainScreenMapView from "./MainScreenMapView";
+import Login from "./components/Login/Login";
+import MainScreenMapView from "./components/MainScreenMapView/MainScreenMapView";
 import { useState } from "react";
 
 export default function App() {
